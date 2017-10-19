@@ -1,0 +1,106 @@
+---
+title             : "Combining ABM with rTMS"
+shorttitle        : "Combining ABM with rTMS"
+
+author: 
+  - name          : "Leonore Bovy"
+    affiliation   : "1,2"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Kapittelweg 29,  6525 EN Nijmegen, The Netherlands. P.O. Box 9101 6500 HB Nijmegen The Netherlands"
+    email         : "l.bovy@donders.ru.nl"
+
+affiliation:
+  - id            : "1"
+    institution   : "Donders Institute"
+  - id            : "2"
+    institution   : "Radboudumc"
+
+abstract: |
+  Enter abstract here. Each new line herein must be indented, like this line.
+  
+keywords          : "attentional bias modification, repetitive transcranial magnetic stimulation, depression, mood, dysphoria"
+wordcount         : "X"
+
+bibliography      : ["r-references.bib"]
+
+figsintext        : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+lineno            : yes
+
+lang              : "english"
+class             : "man"
+output            : papaja::apa6_word
+---
+
+
+```{r install_package, include = FALSE}
+#make sure to comment out when running the code a second time
+#devtools::install_github("crsh/papaja")
+#devtools::install_github("doomlab/MOTE")
+```
+
+```{r load_packages, include = FALSE}
+suppressWarnings(suppressMessages(library(Matrix)))
+suppressWarnings(suppressMessages(library(pbkrtest)))
+suppressWarnings(suppressMessages(library(lme4)))
+suppressWarnings(suppressMessages(library(parallel)))
+suppressWarnings(suppressMessages(library(afex)))
+suppressWarnings(suppressMessages(library(boot)))
+suppressWarnings(suppressMessages(library(effects)))
+suppressWarnings(suppressMessages(library(car)))
+suppressWarnings(suppressMessages(library(lattice)))
+suppressWarnings(suppressMessages(library(psych)))
+suppressWarnings(suppressMessages(library(pastecs)))
+suppressWarnings(suppressMessages(library(ggplot2)))
+suppressWarnings(suppressMessages(library(Hmisc)))
+suppressWarnings(suppressMessages(library(haven)))
+suppressWarnings(suppressMessages(library(nlme)))
+suppressWarnings(suppressMessages(library(devtools)))
+suppressWarnings(suppressMessages(library(tidyr)))
+suppressWarnings(suppressMessages(library(ez)))
+suppressWarnings(suppressMessages(library(lsr)))
+suppressWarnings(suppressMessages(library(lmerTest)))
+suppressWarnings(suppressMessages(library(papaja)))
+suppressWarnings(suppressMessages(library(MOTE)))
+
+```
+
+# Introduction
+
+The lifetime prevalence of major depressive disorder (MDD) is the highest among all mental disorders, with a rate of 18.7% in the Dutch population (de Graaf et al., 2012). A range of different treatment options are available, with pharmacotherapy and cognitive behavioral therapy being the most frequently applied forms of treatment (Nemeroff et al., 2003). Unfortunately, a considerable amount of patients does not benefit from these treatments or suffer from recurrent episodes after a completed therapy (Keller, 1994). Ultimately, after several recurrent depressive episodes, patients can be offered electroconvulsive therapy (ECT), a form of treatment that is accompanied by severe side effects such as anterograde and retrograde memory impairments (for a review see Ingram, Saling, & Schweitzer, 2008). Less invasive forms of therapy are urgently required for otherwise treatment-resistant patients (Keller, 1994). 
+
+
+
+# Methods
+
+
+
+
+
+
+## Participants
+
+## Material
+
+## Procedure
+
+## Data analysis
+We used `r cite_r("r-references.bib")` for all our analyses.
+
+
+# Results
+
+# Discussion
+
+
+\newpage
+
+# References
+```{r create_r-references}
+r_refs(file = "r-references.bib")
+```
+
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
